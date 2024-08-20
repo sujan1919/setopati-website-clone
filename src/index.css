@@ -1,0 +1,217 @@
+
+body{
+  font-weight: 400;
+  font-family: "Tiro Devanagari Sanskrit", serif;
+}
+/* Container for the navigation header */
+.header-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of navigation items */
+}
+
+/* Container for navigation items */
+.nav-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the unordered list */
+.nav-items ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: auto; /* Allows scrolling if needed */
+}
+
+/* Styles for list items */
+.nav-items li {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 19px;
+  color: white;
+  font-weight: 400;
+  font-family: "Tiro Devanagari Sanskrit", serif;
+  white-space: nowrap; /* Prevents wrapping of text inside list items */
+}
+
+/* Active state */
+.nav-items li.active {
+  background-color: #84b4d4;
+}
+
+/* Passive state */
+.nav-items li.passive {
+  background-color: #267163;
+}
+.nav-items li.passive:hover{
+  cursor: pointer;
+  background-color: #84b4d4;
+}
+
+/* Premium state */
+.nav-items li.premium {
+  background-color: #d13938;
+}
+
+/* Responsive adjustments (for screens smaller than 600px) */
+@media (max-width: 600px) {
+  .header-main {
+    overflow-x: scroll; /* Ensure scrolling on small screens */
+  }
+
+  .nav-items li {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+li i{
+  color: black;
+  font-size: 20px;
+}
+/* In styles.css */
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px; /* Adjust size as needed */
+  height: 14px; /* Adjust size as needed */
+}
+
+.search-icon svg {
+  fill: white; /* Adjust color as needed */
+  width: 100%;
+  height: 100%;
+}
+
+ /* UPPER MAIN MENU CSS STARTS  */
+ .upperMenuContainer {
+  width: 80%;
+  overflow-x: auto; 
+  white-space: nowrap;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.mainUpperMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 50px;
+  min-width: 1000px; /* Ensures that the menu does not collapse too much */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.right button {
+  background-color: #d13938;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: #267163;
+  font-size: 16px;
+  gap: 8px; 
+  cursor: pointer;
+}
+
+.login-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.login-icon svg {
+  fill: white;
+  width: 100%;
+  height: 100%;
+  background-color: #267163;
+  border-radius: 50%;
+  padding: 1px 6px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  color: #267163;
+  gap: 40px;
+}
+
+.roundBtnEnglish {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #267163;
+  padding: 8px;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: system-ui;
+  font-weight: 500;
+}
+.calendar svg, .clock svg, .unicode svg,.socialMedia svg{
+  height: 22px;
+}
+
+.calendar, .clock, .unicode, .english, .socialMedia {
+  display: flex;
+  align-items: center;
+}
+.calendar p,.clock p, .unicode p, .english p, .login p{
+  margin-left: 6px;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.socialMedia {
+  display: flex;
+  gap: 12px; 
+}
+
+.socialMedia .fa-icon {
+  color: #267163;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.logo img{
+  height: 140px;
+}
+@media screen and (max-width: 900px) {
+  .logo{
+    padding: 10px;
+  }
+  .logo img {
+      height: 50px;
+  }
+}
