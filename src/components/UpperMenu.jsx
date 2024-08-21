@@ -27,11 +27,11 @@ function UpperMenu() {
                 <div className="left">
                     <div className="calendar">
                         <FontAwesomeIcon icon={faCalendar} />
-                        <p>मंगलबार, भदौ ४, २०८१</p>
+                        <p><iframe scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.ashesh.com.np/linknepali-time.php?dwn=only&font_color=267163&font_size=18&bikram_sambat=0&format=dmyw&api=192080o567" width="165" height="22"></iframe></p>
                     </div>
                     <div className="clock">
                         <FontAwesomeIcon icon={faStopwatch} />
-                        <p>१८ : २७ : ४५</p>
+                        <p><iframe scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.ashesh.com.np/linknepali-time.php?time_only=yes&font_color=267163&aj_time=yes&font_size=18&line_brake=0&bikram_sambat=0&nst=no&api=192086o557" width="307" height="22"></iframe></p>
                     </div>
                     <div className="unicode">
                         <FontAwesomeIcon icon={faKeyboard} />
