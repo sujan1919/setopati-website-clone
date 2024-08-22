@@ -1,5 +1,4 @@
-
-body{
+body {
   font-weight: 400;
   font-family: "Tiro Devanagari Sanskrit", serif;
 }
@@ -8,11 +7,10 @@ body{
   display: flex;
   width: 100%;
   align-items: center;
-  overflow-x: auto; /* Allows horizontal scrolling */
-  white-space: nowrap; /* Prevents wrapping of navigation items */
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-/* Container for navigation items */
 .nav-items {
   width: 100%;
   display: flex;
@@ -20,13 +18,12 @@ body{
   justify-content: center;
 }
 
-/* Styles for the unordered list */
 .nav-items ul {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-  overflow: auto; /* Allows scrolling if needed */
+  overflow: auto;
 }
 
 /* Styles for list items */
@@ -39,7 +36,7 @@ body{
   color: white;
   font-weight: 400;
   font-family: "Tiro Devanagari Sanskrit", serif;
-  white-space: nowrap; /* Prevents wrapping of text inside list items */
+  white-space: nowrap;
 }
 
 /* Active state */
@@ -51,7 +48,7 @@ body{
 .nav-items li.passive {
   background-color: #267163;
 }
-.nav-items li.passive:hover{
+.nav-items li.passive:hover {
   cursor: pointer;
   background-color: #84b4d4;
 }
@@ -61,40 +58,39 @@ body{
   background-color: #d13938;
 }
 
-/* Responsive adjustments (for screens smaller than 600px) */
+/* Responsive (for screens smaller than 600px) */
 @media (max-width: 600px) {
   .header-main {
-    overflow-x: scroll; /* Ensure scrolling on small screens */
+    overflow-x: scroll;
   }
 
   .nav-items li {
-    padding: 8px 12px; /* Adjust padding for smaller screens */
+    padding: 8px 12px;
   }
 }
 
-li i{
+li i {
   color: black;
   font-size: 20px;
 }
-/* In styles.css */
 .search-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 14px; /* Adjust size as needed */
-  height: 14px; /* Adjust size as needed */
+  width: 14px;
+  height: 14px;
 }
 
 .search-icon svg {
-  fill: white; /* Adjust color as needed */
+  fill: white;
   width: 100%;
   height: 100%;
 }
 
- /* UPPER MAIN MENU CSS STARTS  */
- .upperMenuContainer {
+/* UPPER MAIN MENU CSS STARTS  */
+.upperMenuContainer {
   width: 80%;
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: nowrap;
   padding: 10px 0;
   background-color: #f8f8f8;
@@ -108,7 +104,7 @@ li i{
   align-items: center;
   padding: 0 20px;
   gap: 50px;
-  min-width: 1000px; /* Ensures that the menu does not collapse too much */
+  min-width: 1000px;
 }
 
 .right {
@@ -134,7 +130,7 @@ li i{
   align-items: center;
   color: #267163;
   font-size: 16px;
-  gap: 8px; 
+  gap: 8px;
   cursor: pointer;
 }
 
@@ -177,105 +173,287 @@ li i{
   font-family: system-ui;
   font-weight: 500;
 }
-.calendar svg, .clock svg, .unicode svg,.socialMedia svg{
+.calendar svg,
+.clock svg,
+.unicode svg,
+.socialMedia svg {
   height: 22px;
 }
-.calendar iframe{
-  /* margin-left: 6px;
-  font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-}
-.calendar, .clock, .unicode, .english, .socialMedia {
+.calendar,
+.clock,
+.unicode,
+.english,
+.socialMedia {
   display: flex;
   align-items: center;
 }
-.calendar p,.clock p, .unicode p, .english p, .login p{
+.calendar p,
+.clock p,
+.unicode p,
+.english p,
+.login p {
   margin-left: 6px;
   font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .socialMedia {
   display: flex;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .socialMedia .fa-icon {
   color: #267163;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
-.logo img{
+.logo img {
   height: 140px;
 }
 @media screen and (max-width: 900px) {
-  .logo{
+  .logo {
     padding: 10px;
   }
   .logo img {
-      height: 50px;
+    height: 50px;
   }
 }
- 
- /* NEWS SECTION STARTS  */
- .news-box-main{
+
+.news-box-main {
   display: flex;
   height: 200px;
-  margin: 20px 10px;
- }
- .min-box{
+  margin: 40px 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.min-box {
   width: 80%;
   display: flex;
   border: 1px solid #e0e0e0;
   text-align: center;
   justify-content: center;
   margin: auto;
- }
- .min-box h1{
+  flex-direction: column;
+}
+
+.min-box h1 {
   color: #337ab7;
   font-size: 60px;
   cursor: pointer;
   padding: 2px 2px;
   font-weight: 200;
- }
- .min-box h1:hover{
+}
+
+.min-box h1:hover {
   color: black;
- }
- .news-boxwithinfo-main{
+}
+
+.news-boxwithinfo-main {
   display: block;
   width: 100%;
   margin: 5% 0%;
- }
- .min-boxwithinfo{
+}
+
+.min-boxwithinfo {
   width: 80%;
   margin: auto;
   border: 1px solid #e0e0e0;
   text-align: center;
- }
- .min-boxwithinfo .title{
+  margin-top: 2%;
+}
+
+.min-boxwithinfo .title {
   color: #337ab7;
   font-size: 60px;
   font-weight: 200;
- }
- .min-boxwithinfo .title:hover{
+}
+
+.min-boxwithinfo .title:hover {
   cursor: pointer;
   color: black;
- }
- .min-boxwithinfo .author{
+}
+
+.min-boxwithinfo .author {
   font-size: 20px;
   color: #267163;
   font-weight: 600;
- }
- .min-boxwithinfo .description{
+}
+
+.min-boxwithinfo .description {
   font-size: 20px;
   color: black;
   font-weight: 200;
   display: -webkit-box;
-  -webkit-line-clamp: 1; 
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
- }
+}
+.bigyapaan {
+  display: block;
+  width: 80%;
+  align-items: center;
+  margin: 3% auto;
+}
+.ads-block-80percent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.threeBox-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
+
+.threeBox-Box {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.threeBox-Box .threeBox-title {
+  font-size: 32px;
+}
+
+.threeBox-Box .threeBox-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Author text */
+.threeBox-author {
+  font-family: emoji;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Responsive design: screen width 768px and below */
+@media (max-width: 768px) {
+  .threeBox-Box {
+    flex: 1 1 100%;
+  }
+
+  .threeBox-title {
+    font-size: 28px;
+  }
+
+  .threeBox-author {
+    font-size: 16px;
+  }
+}
+
+/* Responsive design: screen width 480px and below */
+@media (max-width: 480px) {
+  .threeBox-title {
+    font-size: 24px;
+  }
+
+  .threeBox-author {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .min-box h1 {
+    font-size: 40px;
+  }
+
+  .min-boxwithinfo .title {
+    font-size: 40px;
+  }
+
+  .min-boxwithinfo .author,
+  .min-boxwithinfo .description {
+    font-size: 16px;
+  }
+
+  .min-box img {
+    width: 100%; /* Adjust image size */
+    height: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .min-box {
+    width: 100%;
+  }
+
+  .min-box h1 {
+    font-size: 30px;
+  }
+
+  .min-boxwithinfo {
+    width: 100%;
+  }
+
+  .min-boxwithinfo .title {
+    font-size: 30px;
+  }
+
+  .min-boxwithinfo .author,
+  .min-boxwithinfo .description {
+    font-size: 14px;
+  }
+
+  .min-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 480px) {
+  .min-box h1 {
+    font-size: 25px;
+  }
+
+  .min-boxwithinfo .title {
+    font-size: 25px;
+  }
+
+  .min-boxwithinfo .author,
+  .min-boxwithinfo .description {
+    font-size: 12px;
+  }
+
+  .min-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 1280px) {
+  .min-box h1 {
+    font-size: 32px;
+  }
+
+  .min-boxwithinfo .title {
+    font-size: 32px;
+  }
+
+  .min-boxwithinfo .author,
+  .min-boxwithinfo .description {
+    font-size: 12px;
+  }
+
+  .min-box .media-image {
+    width: 80%;
+    height: auto;
+  }
+  .min-box .media-image img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}

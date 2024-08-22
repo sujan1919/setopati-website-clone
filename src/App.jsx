@@ -1,16 +1,20 @@
 import React from "react";
-import Header from './components/Header'
+import Header from "./components/Header";
 import UpperMenu from "./components/UpperMenu";
 import News from "./components/News";
+import Ads from "./components/Ads";
+import ThreeBoxNews from "./components/ThreeBoxNews";
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-    <UpperMenu></UpperMenu>
-    <Header></Header>
-    <News></News>
+      <UpperMenu />
+      <Header />
+      <News />
+      <Ads />
+      <ThreeBoxNews />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

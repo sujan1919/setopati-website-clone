@@ -25,7 +25,9 @@ function BoxWithInfo({ title, author, imageurl, description }) {
       <div className="min-boxwithinfo">
         <h1 className="title">{title}</h1>
         <p className="author">{author}</p>
-        <img src={imageurl} alt="" />
+        <div className="media-image">
+        <img className="" src={imageurl} alt=""  width="80%"/>
+        </div>
         <h3 className="description">{truncatedDescription}</h3>
       </div>
     </div>
