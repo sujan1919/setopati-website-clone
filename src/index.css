@@ -4,11 +4,17 @@ body {
 }
 /* Container for the navigation header */
 .header-main {
+  margin: auto;
   display: flex;
-  width: 100%;
+  width: 80%;
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.header-main::-webkit-scrollbar {
+  width: 0; 
+  height: 0;
 }
 
 .nav-items {
@@ -96,6 +102,10 @@ li i {
   background-color: #f8f8f8;
   justify-content: space-evenly;
   margin: auto;
+}
+.upperMenuContainer::-webkit-scrollbar {
+  width: 0; 
+  height: 0; 
 }
 
 .mainUpperMenu {
