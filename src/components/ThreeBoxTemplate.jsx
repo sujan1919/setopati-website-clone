@@ -18,6 +18,7 @@ function ThreeBoxTemplate({ boxes }) {
       {boxes.map((box, index) => (
         <Box
           key={index}
+          
           title={box.title}
           author={box.author}
           imageurl={box.imageurl}
