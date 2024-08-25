@@ -21,5 +21,6 @@ function Ads({ id }) {
     </div>
   );
 }
+ 
 
 export default Ads;

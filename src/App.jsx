@@ -5,6 +5,7 @@ import News from "./components/News";
 import Ads from "./components/Ads";
 import ThreeBoxNews from "./components/ThreeBoxNews";
 import BigThumbnailTemplate from "./components/BigThumbnailTemplate";
+import SectionTitle from "./components/SectionTitle";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ThreeBoxNews />
       <BigThumbnailTemplate />
       <Ads id={2}/>
+      <SectionTitle id={1} />
     </>
   );
 }
